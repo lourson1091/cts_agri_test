@@ -4,9 +4,10 @@ import csv
 
 
 def csv_to_json(rows):
-    # 基本情報の辞書を作成
+    # 基本情報(品種、品目)の辞書を作成
     base_type = {}
     idx_continue = 0
+    headers = []
 
     # "規格" の行を見つけてヘッダーを取得
     for i, row in enumerate(rows):
